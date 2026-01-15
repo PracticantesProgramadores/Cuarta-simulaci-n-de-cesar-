@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crucigrama Académico</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <section class="landing">
+    <h1>Juego, Recreación y Gamificación</h1>
+    <p>Dentro de los diferentes espacios que nos brinda la vida, el momento de juego es cercano al concepto de libertad: es una necesidad básica como alimentarse, dormir y comunicarse. Genera emociones, enseña habilidades para la vida y favorece la convivencia.</p>
+    <blockquote>“El juego abre ventanas del ser para el cultivo de emociones fundamentales en el aprendizaje de la convivencia como la confianza y la aceptación del otro en su legitimidad” — Ministerio de Educación Nacional, 1996.</blockquote>
+    <div class="landing-grid">
+      <div class="landing-col">
+        <h2>Marcos referenciales</h2>
+        <h3>Estándar de competencia</h3>
+        <ul>
+          <li>Interpreta diversas situaciones de juego, conforma grupos de manera equitativa y propone soluciones, evidenciando el papel funcional propio y el de los demás.</li>
+          <li>Relaciona sus emociones en la práctica física con los estados fisiológicos del cuerpo (sudoración, agitación, frecuencia cardiaca y respiratoria).</li>
+          <li>Comprende cómo se reflejan el juego, la recreación y el tiempo libre en el entorno social para favorecer la calidad de vida.</li>
+        </ul>
+        <h3>Elemento de competencia</h3>
+        <ul>
+          <li>Reconoce la diferencia práctica del juego, la recreación y el deporte, adaptándose a su lógica interna, finalidad y normas preestablecidas.</li>
+          <li>Efectúa cambios en estados fisiológicos interpretando la información del juego y escuchando a los compañeros, identificando alternativas de solución según la situación y el momento.</li>
+          <li>Diseña variantes en la dinámica de juegos y actividades deportivas para desarrollar competencias que relacionen el papel en el juego con el papel en el tejido social.</li>
+        </ul>
+      </div>
+      <div class="landing-col">
+        <h2>Gamificación</h2>
+        <p>La gamificación utiliza elementos de juego (puntos, medallas, líderes) para mejorar motivación y compromiso en contextos educativos, facilitando aprendizajes significativos, duraderos y útiles para la vida.</p>
+        <h2>Actividad: Crucigrama</h2>
+        <ol class="pasos">
+          <li>Lee las definiciones y selecciona una pista para activar sus casillas.</li>
+          <li>Escribe las letras; las mayúsculas se aplican automáticamente. Las tildes son opcionales.</li>
+          <li>Usa “Comprobar” para ver aciertos y “Revelar” si necesitas ayuda.</li>
+          <li>El cronómetro registra tu tiempo total hasta completar todas las palabras.</li>
+        </ol>
+        <button id="go-crossword" class="cta">Ir al crucigrama</button>
+      </div>
+    </div>
+  </section>
+  <header class="header hidden">
+    <h1>Crucigrama</h1>
+    <div class="controls">
+      <button id="check">Comprobar</button>
+      <button id="reveal-letter">Revelar letra</button>
+      <button id="reveal-word">Revelar palabra</button>
+      <button id="clear">Limpiar</button>
+      <button id="reset">Reiniciar</button>
+      <span class="timer"><span>⏱</span> <span id="timer">00:00</span></span>
+      <button id="start-timer">Iniciar</button>
+      <button id="stop-timer">Detener</button>
+    </div>
+    
+    <div id="status" class="status"></div>
+    <div id="meta" class="meta"></div>
+  </header>
+  <main class="main hidden">
+    <section class="board-section">
+      <div id="grid" class="grid"></div>
+    </section>
+    <section class="clues-section">
+      <h2>Definiciones</h2>
+      <ol id="clues" class="clues"></ol>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
